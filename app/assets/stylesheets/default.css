@@ -44,9 +44,11 @@ title {
   font-weight: bold;
   background-color: wheat;
 }
-#movies .hilite {
+
+#movies th.hilite {
   background-color: yellow;
 }
+
 #movies th, #movies td {
   padding: 4px;
   text-align: left;
