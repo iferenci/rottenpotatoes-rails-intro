@@ -45,8 +45,8 @@ title {
   background-color: wheat;
 }
 
-#movies th.hilite {
-  background-color: yellow;
+#movies .hilite a:visited {
+    background-color: yellow;
 }
 
 #movies th, #movies td {
