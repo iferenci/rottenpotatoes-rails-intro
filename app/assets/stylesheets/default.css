@@ -45,7 +45,7 @@ title {
   background-color: wheat;
 }
 
-#movies .hilite a:visited {
+#movies hilite {
     background-color: yellow;
 }
 
