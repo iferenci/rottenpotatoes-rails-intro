@@ -8,7 +8,7 @@
       #%th= link_to "Movie Title", movie_path, :id => "title_header", onclick: "$(this).css('background-color', 'yellow')"
       %th Rating
       %th{:class=> @release_header, :id=> "release_date_header"}= link_to "Release Date", movies_path(:sort_by => 'release_date')
-      %th{:class=> "hilite", :id=> "info_header"} More Info
+      %th{:class=> 'hilite', :id=> "info_header"} More Info
   %tbody
     - @movies.each do |movie|
       %tr
