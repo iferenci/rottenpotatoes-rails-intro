@@ -30,10 +30,10 @@ class MoviesController < ApplicationController
         @release_header ='hilite'
       end 
       
-      @ratings = params[:ratings]
+      @ratingsh = params[:ratings]
       
       #@movies = Movie.order(params[:sort_by])
-      @movies = Movie.find(:rating => @ratings.keys)
+      @movies = Movie.find(:conditions => {:rating => @ratingsh.keys})
   end
 
   def new
