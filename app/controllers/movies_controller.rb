@@ -19,9 +19,10 @@ class MoviesController < ApplicationController
 
 
   def index
-    #@movies = Movie.all
-     @movies = Movie.order(params[:sort_by])
+   
+    
      @all_ratings = ['G','PG','PG-13','R']
+     
      
       if params[:sort_by] == 'title'
         @title_header = 'hilite'
@@ -29,6 +30,10 @@ class MoviesController < ApplicationController
         @release_header ='hilite'
       end 
       
+      @ratings = params[:ratings]
+      
+      #@movies = Movie.order(params[:sort_by])
+      @movies = Movie.find(:rating => @ratings.keys)
   end
 
   def new
