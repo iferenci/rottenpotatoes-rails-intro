@@ -32,8 +32,8 @@ class MoviesController < ApplicationController
       
       @ratingsh = params[:ratings]
       
-      #@movies = Movie.order(params[:sort_by])
-      @movies = Movie.find(:conditions => {:rating => @ratingsh.keys})
+      @movies = Movie.order(params[:sort_by])
+      #@movies = Movie.find(:conditions => {:rating => @ratingsh.keys})
   end
 
   def new
